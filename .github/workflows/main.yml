@@ -23,4 +23,4 @@ jobs:
         run: sudo docker-compose -f local.yml run django python manage.py migrate
       - name: 3rd step
         working-directory: /var/www/sayches1
-        run: sudo make up
+        run: sudo make up -d
