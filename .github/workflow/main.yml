@@ -20,10 +20,10 @@ jobs:
         run: docker-compose -f local.yml run django python manage.py makemigrations
       - name: 2nd step
         working-directory: /var/www/sayches1
-      - run: docker-compose -f local.yml run django python manage.py migrate
+        run: docker-compose -f local.yml run django python manage.py migrate
       - name: 3rd step
         working-directory: /var/www/sayches1
-      - run: sudo docker-compose -f local.yml run django python manage.py collectstatic
+        run: sudo docker-compose -f local.yml run django python manage.py collectstatic
       - name: 3rd step
         working-directory: /var/www/sayches1
-      - run: make up
+        run: make up
