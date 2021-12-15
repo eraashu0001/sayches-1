@@ -1,7 +1,7 @@
 upbuild: build up
 
 up:
-	docker-compose -f local.yml up -d
+	docker-compose -f local.yml up
 
 build:
 	docker-compose -f local.yml build
